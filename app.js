@@ -1,3 +1,4 @@
+// Déclaration des constantes
 const inputBox =  document.getElementById("input-box")
 const listContainer =  document.getElementById("list-container")
 
@@ -15,6 +16,10 @@ listContainer.addEventListener('click', (e) => {
 
 
 // Fonctions
+
+/**
+ * Ajout d'une tache
+ */
 function addTask() {
     if(inputBox.value === ''){
         alert('Vous devez écrire quelque chose !')
@@ -31,10 +36,16 @@ function addTask() {
     saveData()
 }
 
+/**
+ * Sauvegarde dans le navigateur
+ */
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML)
 }
 
+/**
+ * Récupération des taches dans le navigatuer
+ */
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data")
 }
