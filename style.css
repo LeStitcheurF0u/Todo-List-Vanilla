@@ -80,7 +80,8 @@
                 background-image: url(assets/img/unchecked.png);
                 background-size: cover;
                 background-position: center;
-                top: 12px;
+                top: 50%;
+                transform: translateY(-50%);
                 left: 8px;
             }
 
@@ -96,7 +97,8 @@
             span {
                 position: absolute;
                 right: 0;
-                top: 5px;
+                top: 50%;
+                transform: translateY(-50%);
                 width: 40px;
                 height: 40px;
                 font-size: 22px;
